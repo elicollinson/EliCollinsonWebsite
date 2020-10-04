@@ -1,20 +1,30 @@
 <template>
   <div id="mainPageDiv">
-    <h1>Eli's Awesome Site</h1>
     <div id="intro-and-portrait-container">
-      <div id="camping-portrait-container">
-        <img alt="standing in the road" src="../assets/Camping-9.jpg" id="camping-portrait">
+      <div id="camping-portrait-container" class="container">
+        <img alt="standing in the road" src="../assets/Camping-10.jpg" id="camping-portrait" class="img-responsive">
       </div>
-      <div id="site-text">
-      <div id="site-introduction">
-        <p class="left-justified"> I am a recent .NET Core Full Stack Development Bootcamp Grad looking for work! If you like this site shoot me an email at elicollinson1@gmail.com. </p>
+      <div id="site-text" class="container">
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">About Me</h5>
+    <p class="card-text">I am a recent .NET Core Full Stack Development Bootcamp Grad looking for work! If you like this site shoot me an email.</p>
+    <a href="mailto:elicollinson1@gmail.com" class="card-link">Email Me</a>
+  </div>
       </div>
-      <div id="bootcamp-info">
-        <p>Here is the bootcamp I went through:</p>
-        <a href="https://www.techelevator.com/columbus">Tech Elevator</a>
-      </div>
-      <div id="site-creation-info">
-        <p>This site was built using vue.js with javascript, HTML5, CSS, and bootstrap.</p>
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">My Bootcamp</h5>
+    <p class="card-text">Want more info about the bootcamp I went through? Click here:</p>
+    <a href="https://www.techelevator.com/columbus" class="card-link">Tech Elevator</a>
+  </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">I Built This Site</h5>
+    <p class="card-text">This site was built using vue.js with Javascript, HTML5, CSS, and bootstrap.</p>
+    <a href="#" class="card-link" v-on:click="openResume()">My Resume</a>
+  </div>
       </div>
       </div>
     </div>
@@ -24,6 +34,11 @@
 <script>
 export default {
   name: 'Home',
+  methods: {
+    openResume () {
+      window.open('../assets/Eli_Collinson_Resume.pdf', '_blank')
+    }
+  }
 }
 </script>
 
@@ -31,37 +46,35 @@ export default {
 <style scoped>
 #intro-and-portrait-container {
   /*display: grid;
-  justify-content: center;
   grid-template-areas: "site-intro camping-portrait-container"
                        "bootcamp-info camping-portrait-container"
                        "site-creation-info camping-portrait-container";
                        */
-  display: flex;
+  /*display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-evenly;*/
+   justify-content: center;
 }
 
 #site-text{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.card {
+  width: 50%;
+  margin: 0 auto;
 }
 
 #camping-portrait-container {
   /*grid-area: camping-portrait-container;*/
-  max-width: 30%;
-  background-color: #77867F;
+  max-width: 100%;
+  /*background-color: #33673B;*/
   padding: 1rem;
   margin-right: 3rem;
 }
 
 #camping-portrait {
-  max-width: 100%;
-}
-
-#site-introduction {
-  /*grid-area: site-intro;*/
-  text-align: left;
+  max-width: 80%;
 }
 
 #bootcamp-info{
@@ -72,9 +85,6 @@ export default {
   /* grid-area: site-creation-info;*/
 }
 
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
@@ -84,14 +94,32 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #CD8987;
+  color: #8B0000;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
 }
-
+/*
 .left-justified {
   padding-left: 3rem;
   padding-right: 3rem;
+}*/
+@media screen and (min-width: 480px) {
+  #site-text{
+    flex-direction: row;
+  }
+
 }
-* {
-  color: #08415C;
+h5 {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+p {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
 }
 </style>
