@@ -18,7 +18,7 @@
   </div>
   <img src="../assets/Camping-9.jpg" id="my-story-img"/>
   </div>
-  <div id="why-site" class="container">
+  <div id="why-site">
   <h2>Why This Site</h2>
   <p>I built this site in order to start building a portfolio of work coming out of my program, and as a project to work on and hone my skills. As of now, the site consists of this bio page, my home page, and a small gallery component. The gallery takes advantage of the magic of Vue.js, clicking a thumbnail will bring the photo up in the larger viewer above. My current planned additions are:</p>
   <ul>
