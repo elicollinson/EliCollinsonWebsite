@@ -1,8 +1,8 @@
 <template>
   <div id="mainPageDiv">
     <div id="intro-and-portrait-container">
-      <div id="camping-portrait-container" class="container">
-        <img alt="standing in the road" src="../assets/Camping-10.jpg" id="camping-portrait" class="img-responsive">
+      <div id="eli-portrait-container" class="container">
+        <img alt="standing in the road" src="../assets/EliHeadshot.jpg" id="eli-portrait" class="img-responsive">
       </div>
       <div id="site-text" class="container">
         <div class="card" style="width: 18rem;">
@@ -65,7 +65,7 @@ export default {
   margin: 0 auto;
 }
 
-#camping-portrait-container {
+#eli-portrait-container {
   /*grid-area: camping-portrait-container;*/
   max-width: 100%;
   /*background-color: #33673B;*/
@@ -73,8 +73,8 @@ export default {
   margin-right: 3rem;
 }
 
-#camping-portrait {
-  max-width: 80%;
+#eli-portrait {
+  max-width: 65%;
 }
 
 #bootcamp-info{
