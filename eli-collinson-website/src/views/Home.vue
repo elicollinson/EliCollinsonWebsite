@@ -122,4 +122,9 @@ p {
   font-style: normal;
   font-size: 14pt;
 }
+#mainPageDiv {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>

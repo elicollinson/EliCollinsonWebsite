@@ -1,6 +1,7 @@
 <template>
 <div class="container-fluid" id="gallery">
     <h1>Gallery</h1>
+    <p>I moonlight as a photographer, so I've assembled some images here to put together a basic gallery component. Suggestions (<a href="mailto:elicollinson1@gmail.com" class="card-link">Email Me</a>) are welcome, especially in assisting with load speed, which is one of the next projects I will be taking on.</p>
     <!--<div id="large-image-div">-->
         <img v-bind:src="this.largeImage" class="large-image img-responsive">
     <!--</div>-->
@@ -94,5 +95,11 @@ h1 {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+p {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
 }
 </style>
