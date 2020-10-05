@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueAnalytics, {
-  id: 'UA-12345678-1',
+  id: 'UA-179597710-1',
   router
 })
 
