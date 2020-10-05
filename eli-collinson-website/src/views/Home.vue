@@ -23,7 +23,7 @@
   <div class="card-body">
     <h5 class="card-title">I Built This Site</h5>
     <p class="card-text">This site was built using vue.js with Javascript, HTML5, CSS, and bootstrap.</p>
-    <a href="#" class="card-link" v-on:click="openResume()">My Resume</a>
+    <a href="https://drive.google.com/file/d/1heUoUmBAKrLGCyn6CqI0rkaH5gcuGK11/view?usp=sharing" target="_blank">My Resume</a>
   </div>
       </div>
       </div>

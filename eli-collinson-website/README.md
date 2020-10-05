@@ -1,4 +1,4 @@
-# eli-collinson-website
+# Eli Collinson
 
 ## Project setup
 ```
