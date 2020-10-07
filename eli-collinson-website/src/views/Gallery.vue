@@ -7,40 +7,40 @@
     <!--</div>-->
     <div id="tiles-container">
     <div class="small-image-div">
-        <img src="../assets/boulderthoughts.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-01.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/2.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-09.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/3.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-03.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/4.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-04.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/5.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-05.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/6.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-06.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/7.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-07.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/8.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-08.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/9.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-02.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/10.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-10.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/11.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-11.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/12.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <img src="../assets/WebGallery-12.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     </div>
 </div>
@@ -51,7 +51,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      largeImage: require('../assets/boulderthoughts.jpg')
+      largeImage: require('../assets/WebGallery-01.jpg')
     }
   },
   methods: {
