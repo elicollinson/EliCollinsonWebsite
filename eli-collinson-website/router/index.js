@@ -4,6 +4,7 @@ import Home from '../src/views/Home.vue'
 import mystory from '../src/views/MyStory.vue'
 import Gallery from '../src/views/Gallery.vue'
 import Resume from '../src/views/Resume.vue'
+import BlogPost from '../src/views/BlogPost.vue'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ const router = new Router({
       path: '/resume',
       name: 'resume',
       component: Resume
+    },
+    {
+      path: '/blog/post',
+      name: 'blogpost',
+      component: BlogPost
     },
     {
       path: '*',

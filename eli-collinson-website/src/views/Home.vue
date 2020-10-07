@@ -2,7 +2,7 @@
   <div id="mainPageDiv">
     <div id="intro-and-portrait-container">
       <div id="eli-portrait-container" class="container">
-        <img alt="standing in the road" src="../assets/EliHeadshot.jpg" id="eli-portrait" class="img-responsive">
+        <img alt="standing in the road" src="../assets/EliHeadshotSmall.jpg" id="eli-portrait" class="img-responsive">
       </div>
       <div id="site-text" class="container">
         <div class="card" style="width: 18rem;">
