@@ -1,7 +1,7 @@
 <template>
   <div id="contact-me">
     <h1>Contact Me</h1>
-    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify="true">
+    <form class="container-fluid" v-on:submit.prevent id="contact-form" name="contact" method="POST" data-netlify="true">
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="FullName" v-model="submissionInfo.submissionName" required/>
         <label for="Email">Email</label>
