@@ -15,6 +15,7 @@
     "loader-utils": "^2.0.0",
     "pdfjs-dist": "^2.5.207",
     "pdfreader": "^1.2.6",
+    "prerender": "^5.8.0",
     "vue": "^2.6.11",
     "vue-analytics": "^5.22.1",
     "vue-pdf": "^4.1.0",
