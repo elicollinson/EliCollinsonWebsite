@@ -10,6 +10,7 @@
         <input class="form-control my-size" type="text" name="Message" v-model="submissionInfo.submissionMessage" required/>
         <label for="PhoneNumber">Please Enter Your Phone Number (Optional)</label>
         <input class="form-control my-size" type="tel" name="PhoneNumber" v-model="submissionInfo.submissionPhoneNumber" />
+        <input type="submit" class="form-control" />
     </form>
   </div>
 </template>
