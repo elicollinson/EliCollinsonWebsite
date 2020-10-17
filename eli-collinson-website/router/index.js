@@ -5,6 +5,8 @@ import mystory from '../src/views/MyStory.vue'
 import Gallery from '../src/views/Gallery.vue'
 import Resume from '../src/views/Resume.vue'
 import BlogPost from '../src/views/BlogPost.vue'
+import Blog from '../src/views/Blog.vue'
+import ContactMe from '../src/views/ContactMe.vue'
 
 Vue.use(Router)
 
@@ -39,12 +41,31 @@ const router = new Router({
     {
       path: '/resume',
       name: 'resume',
-      component: Resume
+      component: Resume,
+      meta: {
+        title: 'Resume'
+      }
     },
     {
-      path: '/blog/post',
+      path: '/blog/',
+      name: 'blog',
+      component: Blog,
+      meta: {
+        title: 'Blog'
+      }
+    },
+    {
+      path: '/blog/post/:postId',
       name: 'blogpost',
       component: BlogPost
+    },
+    {
+      path: '/contactMe/',
+      name: 'contactme',
+      component: ContactMe,
+      meta: {
+        title: 'Contact Me'
+      }
     },
     {
       path: '*',

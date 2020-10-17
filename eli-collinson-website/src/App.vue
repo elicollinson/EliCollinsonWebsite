@@ -14,6 +14,8 @@
       <router-link class="nav-item nav-link navbar-custom" v-bind:to="{name: 'home'}">Home <span class="sr-only">(current)</span></router-link>
       <router-link class="nav-item nav-link navbar-custom" v-bind:to="{name: 'my-story'}">My Story</router-link>
       <router-link class="nav-item nav-link navbar-custom" v-bind:to="{name: 'gallery'}">Gallery</router-link>
+      <router-link class="nav-item nav-link navbar-custom" v-bind:to="{name: 'blog'}">Blog</router-link>
+      <router-link class="nav-item nav-link navbar-custom" v-bind:to="{name: 'contactme'}">Contact Me</router-link>
     </div>
   </div>
 </nav>
