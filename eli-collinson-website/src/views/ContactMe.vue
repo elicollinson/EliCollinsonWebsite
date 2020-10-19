@@ -1,7 +1,6 @@
 <template>
   <div id="contact-me">
     <h1>Contact Me</h1>
-    <!--
     <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true>
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="FullName" v-model="submissionInfo.submissionName" required/>
@@ -13,21 +12,6 @@
         <input class="form-control my-size" type="tel" name="PhoneNumber" v-model="submissionInfo.submissionPhoneNumber" />
         <input type="submit" class="form-control" />
     </form>
-    -->
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-    <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
   </div>
 </template>
 
