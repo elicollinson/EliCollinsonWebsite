@@ -22,7 +22,7 @@ export default {
   name: 'ContactMe',
   data () {
     return {
-      submissionInfo: {
+      form: {
         submissionName: '',
         submissionEmail: '',
         submissionMessage: '',
