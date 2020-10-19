@@ -1,7 +1,7 @@
 <template>
   <div id="contact-me">
     <h1>Contact Me</h1>
-    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true>
+    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="FullName" v-model="submissionInfo.submissionName" required/>
         <label for="Email">Email</label>
@@ -16,6 +16,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'ContactMe',
   data () {
@@ -27,8 +29,33 @@ export default {
         submissionPhoneNumber: ''
       }
     }
+  },
+  methods: {
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      axios.post(
+        '/',
+        this.encode({
+          'form-name': 'contact',
+          ...this.form
+        }),
+        axiosConfig
+      ).then(() => {
+        this.$router.push('thanks')
+      }).catch(() => {
+        this.$router.push('404')
+      })
+    }
   }
-
 }
 </script>
 

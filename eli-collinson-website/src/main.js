@@ -3,6 +3,10 @@ import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import router from '../router/index'
 import VueAnalytics from 'vue-analytics'
+import axios from 'axios'
+
+Vue.prototype.$http = axios
+Vue.prototype.axios = axios
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)

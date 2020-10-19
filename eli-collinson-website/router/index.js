@@ -7,6 +7,8 @@ import Resume from '../src/views/Resume.vue'
 import BlogPost from '../src/views/BlogPost.vue'
 import Blog from '../src/views/Blog.vue'
 import ContactMe from '../src/views/ContactMe.vue'
+import FormFailure from '../src/views/FormFailure.vue'
+import FormSuccess from '../src/views/FormSuccess.vue'
 
 Vue.use(Router)
 
@@ -66,6 +68,16 @@ const router = new Router({
       meta: {
         title: 'Contact Me'
       }
+    },
+    {
+      path: '/thanks',
+      name: 'success',
+      component: FormSuccess
+    },
+    {
+      path: '/404',
+      name: 'fail',
+      component: FormFailure
     },
     {
       path: '*',
