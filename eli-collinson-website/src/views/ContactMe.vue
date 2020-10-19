@@ -3,13 +3,13 @@
     <h1>Contact Me</h1>
     <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
         <label for="FullName">Please Enter Full Name</label>
-        <input class="form-control my-size" type="text" name="FullName" v-model="submissionInfo.submissionName" required/>
+        <input class="form-control my-size" type="text" name="FullName" v-model="form.submissionName" required/>
         <label for="Email">Email</label>
-        <input class="form-control my-size" type="email" name="Email" v-model="submissionInfo.submissionEmail" required/>
+        <input class="form-control my-size" type="email" name="Email" v-model="form.submissionEmail" required/>
         <label for="Message">Please Enter Your Message</label>
-        <input class="form-control my-size" type="text" name="Message" v-model="submissionInfo.submissionMessage" required/>
+        <input class="form-control my-size" type="text" name="Message" v-model="form.submissionMessage" required/>
         <label for="PhoneNumber">Please Enter Your Phone Number (Optional)</label>
-        <input class="form-control my-size" type="tel" name="PhoneNumber" v-model="submissionInfo.submissionPhoneNumber" />
+        <input class="form-control my-size" type="tel" name="PhoneNumber" v-model="form.submissionPhoneNumber" />
         <input type="submit" class="form-control" />
     </form>
   </div>
