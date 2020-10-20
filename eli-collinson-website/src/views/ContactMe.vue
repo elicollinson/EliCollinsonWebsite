@@ -1,6 +1,7 @@
 <template>
   <div id="contact-me">
     <h1>Contact Me</h1>
+    <p>Right now this form is sending messages, but not capturing the data, so if you need to get in touch, email me at elicollinson1@gmail.com</p>
     <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="FullName" v-model="form.fullName" required/>
@@ -70,6 +71,9 @@ label {
     font-weight: 400;
     font-style: normal;
     font-size: 14pt;
+}
+input {
+  margin-bottom: .5rem;
 }
 @media screen and (min-width: 480px) {
   .my-size {

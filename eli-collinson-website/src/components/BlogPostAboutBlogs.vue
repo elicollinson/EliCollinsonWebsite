@@ -6,7 +6,6 @@
       <img src="../assets/CodeScreenshot.png" alt="Screenshot of computer code"/>
     </div>
     <div id="blog-text">
-    <p>
     <p>Welcome to the first post on Known Issues! The most pressing issue I want to talk about here is the complex nature of blogs themselves.</p>
     <p>
         When I put this on my todo list, I knew that many people use modern CMS systems to create blogs, but I find the best way to learn is tackling big challenges, so I decided to attempt to put mine together myself.I've built basic sites on wordpress before, so I am familiar with the general flow and feel of most blogs. As I've started to build my own, I've discoverd there was a lot I took for granted in those tools.

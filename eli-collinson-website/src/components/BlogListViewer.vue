@@ -1,5 +1,15 @@
 <template>
 <div>
+  <router-link v-bind:to="{path: '/blog/post/3'}">
+    <div class="card mb-3">
+  <img src="../assets/ContactMe.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">The Easy Way Out Is A Trap</h5>
+    <p class="card-text">Meditations on what you can learn from a contact form.</p>
+    <p class="card-text"><small class="text-muted">Last updated October 20th, 2020</small></p>
+  </div>
+</div>
+    </router-link>
     <router-link v-bind:to="{path: '/blog/post/2'}">
     <div class="card mb-3">
   <img src="../assets/ThinCode.png" class="card-img-top" alt="...">
@@ -7,16 +17,6 @@
     <h5 class="card-title">A Blog Post About Blogs</h5>
     <p class="card-text">Marvelling at the complexity of things we take for granted.</p>
     <p class="card-text"><small class="text-muted">Last updated October 9th, 2020</small></p>
-  </div>
-</div>
-    </router-link>
-   <router-link v-bind:to="{path: '/blog/post/1'}">
-    <div class="card mb-3">
-  <img src="../assets/ThinError.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Test Blog Post</h5>
-    <p class="card-text">A fake post to demonstrate formatting for the page.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
     </router-link>
