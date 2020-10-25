@@ -2,7 +2,7 @@
   <div id="contact-me">
     <h1>Contact Me</h1>
     <p class="container-fluid">Thank you for your interest! Please fill out the form an I will reach out. None of the data used here is shared with anyone else.</p>
-    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit" data-netlify-recaptcha="true">
+    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="fullName" v-model="form.fullName" required/>
         <label for="Email">Email</label>
@@ -11,14 +11,12 @@
         <input class="form-control my-size" type="text" name="message" v-model="form.message" required/>
         <label for="PhoneNumber">Please Enter Your Phone Number (Optional)</label>
         <input class="form-control my-size" type="tel" name="phoneNumber" v-model="form.phoneNumber" />
-        <div data-netlify-recaptcha="true"></div>
         <input type="submit" class="form-control" />
     </form>
   </div>
 </template>
 
 <script>
-/* import axios from 'axios' */
 
 export default {
   name: 'ContactMe',
@@ -58,26 +56,6 @@ export default {
     }
   }
 }
-/*
-    handleSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      axios.post(
-        '/',
-        this.encode({
-          'form-name': 'contact',
-          ...this.form
-        }),
-        axiosConfig
-      ).then(() => {
-        this.$router.push('thanks')
-      }).catch(() => {
-        this.$router.push('404')
-      })
-    }
-  }
-} */
 </script>
 
 <style scoped>
