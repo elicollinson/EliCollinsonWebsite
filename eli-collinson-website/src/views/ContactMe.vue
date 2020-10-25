@@ -2,7 +2,10 @@
   <div id="contact-me">
     <h1>Contact Me</h1>
     <p class="container-fluid">Thank you for your interest! Please fill out the form an I will reach out. None of the data used here is shared with anyone else.</p>
-    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
+    <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit" netlify-honeypot="bot-field">
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="fullName" v-model="form.fullName" required/>
         <label for="Email">Email</label>
