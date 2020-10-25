@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>You're Awesome! Thank you for your submission!</h1>
+    <h1>Thank you for reaching out. I will follow up with you shortly!</h1>
     <router-link to="/">
-      <button>Back to form</button>
+      <button class="btn btn-secondary">Back to home</button>
     </router-link>
   </div>
 </template>
@@ -13,6 +13,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+h1 {
+  margin-bottom: 2rem;
+}
 
 </style>

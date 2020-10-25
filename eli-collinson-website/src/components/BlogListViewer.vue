@@ -5,7 +5,7 @@
   <img src="../assets/ContactMe.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">The Easy Way Out Is A Trap</h5>
-    <p class="card-text">Meditations on what you can learn from a contact form.</p>
+    <p class="card-text">Lessons you can learn from a contact form.</p>
     <p class="card-text"><small class="text-muted">Last updated October 20th, 2020</small></p>
   </div>
 </div>

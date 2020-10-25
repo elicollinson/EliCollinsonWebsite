@@ -1,7 +1,7 @@
 <template>
   <div id="contact-me">
     <h1>Contact Me</h1>
-    <p>Right now this form is sending messages, but not capturing the data, so if you need to get in touch, email me at elicollinson1@gmail.com</p>
+    <p class="container-fluid">Thank you for your interest! Please fill out the form an I will reach out. None of the data used here is shared with anyone else.</p>
     <form class="container-fluid" id="contact-form" name="contact" method="POST" data-netlify=true @submit.prevent="handleSubmit">
         <label for="FullName">Please Enter Full Name</label>
         <input class="form-control my-size" type="text" name="fullName" v-model="form.fullName" required/>
