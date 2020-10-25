@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+/* import axios from 'axios' */
 
 export default {
   name: 'ContactMe',
@@ -39,6 +39,25 @@ export default {
         )
         .join('&')
     },
+    handleSubmit (e) {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode({
+          'form-name': 'contact',
+          ...this.form
+        })
+      })
+        .then(() => {
+          this.$router.push('thanks')
+        })
+        .catch(() => {
+          this.$router.push('404')
+        })
+    }
+  }
+}
+/*
     handleSubmit () {
       const axiosConfig = {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' }
@@ -57,7 +76,7 @@ export default {
       })
     }
   }
-}
+} */
 </script>
 
 <style scoped>
