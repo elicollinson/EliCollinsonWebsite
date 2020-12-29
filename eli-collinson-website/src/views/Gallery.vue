@@ -34,13 +34,22 @@
         <img src="../assets/WebGallery-02.jpg" class="small-image" v-on:click="SetLargeImage()">
     </div>
     <div class="small-image-div">
-        <img src="../assets/WebGallery-10.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <picture>
+            <source srcset="../assets/WebGallery-10.jp2" type="image/jp2">
+            <source srcset="../assets/WebGallery-10.jpg" type="image/jpeg">
+        </picture>
     </div>
     <div class="small-image-div">
-        <img src="../assets/WebGallery-11.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <picture>
+            <source srcset="../assets/WebGallery-11.jp2" type="image/jp2">
+            <source srcset="../assets/WebGallery-11.jpg" type="image/jpeg">
+        </picture>
     </div>
     <div class="small-image-div">
-        <img src="../assets/WebGallery-12.jpg" class="small-image" v-on:click="SetLargeImage()">
+        <picture>
+            <source srcset="../assets/WebGallery-12.jp2" type="image/jp2">
+            <source srcset="../assets/WebGallery-12.jpg" type="image/jpeg">
+        </picture>
     </div>
     </div>
 </div>
