@@ -56,6 +56,7 @@ a {
   color: #8B0000;
 }
 #app {
+  font-display: swap;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
